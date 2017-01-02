@@ -1,0 +1,29 @@
+#sitename1 {
+	top: 0px !important;
+	left: 60px !important;
+}
+
+#sitename2 a{
+	font-size: 40px !important;
+	font-style: oblique;
+}
+
+#header h1 {
+	text-transform: none;
+}
+
+.sf_search_button  {
+	margin-left: 125px;
+}
+
+.sf_search_results_title {
+	margin-top: 40px;
+}
+
+.sf_search_results  {
+	margin-top: 20px;
+}
+
+.sf_contact_panel {
+	background: none !important;
+}
