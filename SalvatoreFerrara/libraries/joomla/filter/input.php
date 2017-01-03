@@ -649,9 +649,11 @@ class JFilterInput extends JObject
 		}
 		$source = strtr($source, $ttr);
 		// Convert decimal
-		$source = preg_replace('/&#(\d+);/me', "utf8_encode(chr(\\1))", $source); // decimal notation
+		//$source = preg_replace('/&#(\d+);/me', "utf8_encode(chr(\\1))", $source); // decimal notation
+		$source = preg_replace_callback('/&#(\d+);/m',function($m) { return utf8_encode($m[1]); }, $source); // fix: decimal notation with function preg_replace_callback
 		// Convert hex
-		$source = preg_replace('/&#x([a-f0-9]+);/mei', "utf8_encode(chr(0x\\1))", $source); // hex notation
+		//$source = preg_replace('/&#x([a-f0-9]+);/mei', "utf8_encode(chr(0x\\1))", $source); // hex notation
+		$source = preg_replace_callback('/&#x([a-f0-9]+);/mi',function($m) { return utf8_encode($m[1]); }, $source); // fix: hex notation with function preg_replace_callback
 		return $source;
 	}
 
