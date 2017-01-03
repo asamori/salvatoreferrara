@@ -53,8 +53,10 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = 'C:\\Programmi\\Wamp\\www\\salvatoreferrara/logs';
-	public $tmp_path = 'C:\\Programmi\\Wamp\\www\\salvatoreferrara/tmp';
+	//public $log_path = 'C:\\Programmi\\Wamp\\www\\salvatoreferrara/logs';
+	public $log_path = 'C:\\Git\\Repositories\\salvatoreferrara-repo-git\\SalvatoreFerrara/logs'; // fix log_path
+	//public $tmp_path = 'C:\\Programmi\\Wamp\\www\\salvatoreferrara/tmp';
+	public $tmp_path = 'C:\\Git\\Repositories\\salvatoreferrara-repo-git\\SalvatoreFerrara/tmp'; // fix tmp_path
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = '';
